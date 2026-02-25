@@ -13,7 +13,7 @@ const app = express();
    CORS（允許 GitHub Pages 來源）
    ========================= */
 app.use(cors({
-  origin: ['http://taipei-101-run-up.smartchat.live/'],
+  origin: ['http://taipei-101-run-up.smartchat.live'],
   methods: ['GET', 'POST', 'OPTIONS'],
   // 保留 X-Client-Id 供多使用者識別
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Client-Id'],
@@ -94,6 +94,7 @@ app.listen(PORT, () => {
   console.log(`Server running: http://localhost:${PORT}`);
 
 });
+
 
 
 
